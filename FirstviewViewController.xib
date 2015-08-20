@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F1096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstviewViewController">
+            <connections>
+                <outlet property="Btn_next" destination="Pra-DW-Jgk" id="9PU-Ho-WpJ"/>
+                <outlet property="Img_Second" destination="Qu7-bz-jS5" id="7hO-Lm-9Mn"/>
+                <outlet property="Img_Third" destination="q0U-qC-uCK" id="v07-0l-EHK"/>
+                <outlet property="Img_first" destination="9aS-Wd-zPN" id="Ssf-qL-pvn"/>
+                <outlet property="Img_forth" destination="rE9-kG-a0w" id="7qA-ER-FgA"/>
+                <outlet property="fld_first" destination="Xk3-47-twr" id="kOe-IE-aXc"/>
+                <outlet property="fld_forth" destination="lNu-HB-hLe" id="Yfa-JZ-0Bx"/>
+                <outlet property="fld_second" destination="7qb-HU-8XG" id="rU1-j2-MFk"/>
+                <outlet property="fld_third" destination="r4r-Gn-7Ag" id="uSh-rl-uxp"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fisrt Text" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xk3-47-twr">
+                    <rect key="frame" x="13" y="75" width="221" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="9s7-pt-KSP"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Second Text" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7qb-HU-8XG">
+                    <rect key="frame" x="13" y="139" width="221" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="hss-bt-e2N"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Third Text" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r4r-Gn-7Ag">
+                    <rect key="frame" x="13" y="204" width="221" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="59C-Ho-a5f"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Forth Text" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lNu-HB-hLe">
+                    <rect key="frame" x="13" y="266" width="221" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="eSM-JA-dDH"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pra-DW-Jgk">
+                    <rect key="frame" x="134" y="320" width="53" height="30"/>
+                    <state key="normal" title="Next">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="Btn_Action:" destination="-1" eventType="touchUpInside" id="SPr-I2-2ay"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9aS-Wd-zPN">
+                    <rect key="frame" x="262" y="65" width="46" height="48"/>
+                    <color key="backgroundColor" red="0.19993617629999999" green="0.75059859819999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="Btn_Action:" destination="-1" eventType="touchUpInside" id="0ht-tm-CdQ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qu7-bz-jS5">
+                    <rect key="frame" x="263" y="129" width="46" height="48"/>
+                    <color key="backgroundColor" red="0.19993617629999999" green="0.75059859819999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="Btn_Action:" destination="-1" eventType="touchUpInside" id="m3o-Nh-Dc6"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0U-qC-uCK">
+                    <rect key="frame" x="263" y="192" width="46" height="48"/>
+                    <color key="backgroundColor" red="0.19993617629999999" green="0.75059859819999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="Btn_Action:" destination="-1" eventType="touchUpInside" id="Rho-7v-db9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rE9-kG-a0w">
+                    <rect key="frame" x="263" y="256" width="46" height="48"/>
+                    <color key="backgroundColor" red="0.19993617629999999" green="0.75059859819999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="Btn_Action:" destination="-1" eventType="touchUpInside" id="jF4-np-hF5"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>
